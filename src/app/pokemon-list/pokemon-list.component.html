@@ -1,9 +1,11 @@
-<input [(ngModel)]="searchText" placeholder="search text goes here">
+<div class="container">
+  <input [(ngModel)]="searchText" placeholder="Find your Pokemon">
 
-<ul>
-  <li *ngFor="let pokemon of pokemonList | filter: searchText; let i = index">
-    <a routerLink="/pokemon/{{i + 1}}">
-      {{ pokemon.name }}
-    </a>
-  </li>
-</ul>
+  <ul>
+    <li 
+      *ngFor="let pokemon of pokemonList | filter: searchText; let i = index"
+      routerLink="/pokemon/{{pokemon.id}}">
+        {{ pokemon.name }}
+    </li>
+  </ul>
+</div>

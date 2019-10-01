@@ -3,6 +3,7 @@ h1 {
     letter-spacing: .2em;
     font-size: 5.5em;
     text-shadow: -8px 8px 1px rgba(17, 81, 115, 1);
+    color: #ffd700;
     text-transform: uppercase;
     margin-bottom: 0;
 }

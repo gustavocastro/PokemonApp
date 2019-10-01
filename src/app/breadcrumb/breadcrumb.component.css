@@ -8,11 +8,14 @@ li {
     display: inline;
     list-style-type: none;
     margin: 0;
+}
+li > a {
+    color: #F1E5D8;
     padding: .5em .8em;
     border-radius: 4px;
-    cursor: pointer;
+    text-decoration: none;
 }
-li:active, li:focus {
+li > a:active, li > a:focus {
     outline: 0;
     border: none;
 }
@@ -21,6 +24,9 @@ li:active, li:focus {
     background-color: #053f5e;
 }
 
-.block {
+.blocked {
     cursor: not-allowed;
+}
+.blocked > a {
+    pointer-events: none;
 }
