@@ -14,12 +14,7 @@ export class PokemonListComponent implements OnInit {
   ngOnInit() {
     this.pokemonService.getPokemons()
         .subscribe(
-          data => {
-            data.results.forEach(item => {
-              item.id = item.url.split("https://pokeapi.co/api/v2/pokemon/")[1]
-            });
-            this.pokemonList = data.results;
-          },
+          data => this.pokemonList = data.results,
           err => console.log(err)
         )
   }

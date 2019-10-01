@@ -3,8 +3,8 @@
 
   <ul>
     <li 
-      *ngFor="let pokemon of pokemonList | filter: searchText; let i = index"
-      routerLink="/pokemon/{{pokemon.id}}">
+      *ngFor="let pokemon of pokemonList | filter: searchText"
+      routerLink="/pokemon/{{pokemon.name}}">
         {{ pokemon.name }}
     </li>
   </ul>

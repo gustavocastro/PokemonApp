@@ -8,7 +8,9 @@ h1 {
     margin-bottom: .8em;
 }
 
-h2 {}
+h2 {
+    text-align: center;
+}
 
 .content {
     display: flex;
