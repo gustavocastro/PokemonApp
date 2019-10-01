@@ -1,0 +1,31 @@
+h1 {
+    font-family: 'Anton';
+    letter-spacing: .2em;
+    font-size: 5.5em;
+    text-shadow: -8px 8px 1px rgba(17, 81, 115, 1);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Staatliches';
+    letter-spacing: 2px;
+    margin: 0 0 50px 0;
+}
+
+button {
+    border: none;
+    padding: 1em 1.5em;
+    color: #F1E5D8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: .95em;
+    background: rgb(41,115,143);
+    background: linear-gradient(142deg, rgba(41,115,143,1) 0%, rgba(41,115,143,1) 27%, rgba(95,179,210,1) 100%);
+}
+
+.center {
+    text-align: center;
+}

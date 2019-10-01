@@ -1,0 +1,26 @@
+ul {
+    margin: 5vh 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: .5em .8em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+li:active, li:focus {
+    outline: 0;
+    border: none;
+}
+
+.active {
+    background-color: #053f5e;
+}
+
+.block {
+    cursor: not-allowed;
+}

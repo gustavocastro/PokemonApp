@@ -1,0 +1,13 @@
+<h1>{{pokemon.name}}</h1>
+
+<ul>
+  <li *ngFor="let item of pokemon.abilities">
+    {{ item.ability.name }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let item of pokemon.types">
+    {{ item.type.name }}
+  </li>
+</ul>

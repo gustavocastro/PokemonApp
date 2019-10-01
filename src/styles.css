@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Poppins|Anton&display=swap');
+
+body {
+    background-color: #022c43;
+    color: #F1E5D8;
+    font-family: 'Poppins';
+}
