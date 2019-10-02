@@ -1,7 +1,16 @@
-<div class="container">
-  <h1>{{pokemon.name}}</h1>
+<div class="container" *ngIf="pokemon.name; else loading">
+  <div class="title">
+    <h1>{{pokemon.name}}</h1>
+  
+    <div class="sprites">
+      <img [src]="pokemon.sprites.front_default" alt="{{pokemon.name}} front default">
+      <img [src]="pokemon.sprites.back_default" alt="{{pokemon.name}} back default">
+      <img [src]="pokemon.sprites.front_shiny" alt="{{pokemon.name}} front shiny">
+      <img [src]="pokemon.sprites.back_shiny" alt="{{pokemon.name}} back shiny">
+    </div>
+  </div>
 
-  <div class="content" *ngIf="pokemon.name; else loading">
+  <div class="content">
     <div class="card">
       <h2>Abilities</h2>
 
@@ -22,8 +31,8 @@
       </ul>
     </div>
   </div>
-
-  <ng-template #loading>
-    <h2>Loading...</h2>
-  </ng-template>
 </div>
+
+<ng-template #loading>
+  <h2 class="loading">Loading...</h2>
+</ng-template>

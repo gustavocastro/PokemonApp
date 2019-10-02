@@ -5,7 +5,7 @@
   <li>
     <a routerLink="/list" routerLinkActive="active">Pokemons</a>
   </li>
-  <li class="blocked">
+  <li class="blocked" *ngIf="router.url.indexOf('/pokemon') !== -1">
     <a routerLink="/pokemon" routerLinkActive="active">Details</a>
   </li>
 </ul>

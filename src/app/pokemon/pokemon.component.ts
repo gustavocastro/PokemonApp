@@ -10,7 +10,7 @@ import Pokemon from '../pokemon.model';
   styleUrls: ['./pokemon.component.css']
 })
 export class PokemonComponent implements OnInit {
-  pokemon: Pokemon = new Pokemon("", [], []);
+  pokemon: Pokemon = new Pokemon("", [], [], {});
 
   constructor(
       private http: HttpClient, 
@@ -26,7 +26,8 @@ export class PokemonComponent implements OnInit {
               this.pokemon = {
                 name: data["name"],
                 abilities: data["abilities"],
-                types: data["types"]
+                types: data["types"],
+                sprites: data["sprites"]
               }
             }
           )

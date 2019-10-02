@@ -8,8 +8,8 @@ h1 {
     margin-bottom: .8em;
 }
 
-h2 {
-    text-align: center;
+.title {
+    display: flex;
 }
 
 .content {
@@ -22,4 +22,8 @@ h2 {
     width: 46%;
     padding: .2em .8em;
     border-radius: 4px;
+}
+
+.loading {
+    text-align: center;
 }
